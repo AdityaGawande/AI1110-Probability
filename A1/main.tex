@@ -288,11 +288,11 @@ There are 5\% defective items in a large bulk of items. What is the probability 
 Let there be x number of defective items in a sample of of ten items drawn successively.
 Now, as we can see that the drawing of the items is done with replacement. Thus, the trials are Bernoulli trials.
 Probability of failure = p 
-\begin{align*}
+\begin{align}
 p &= 0.05 \\
 q &= 1-p = 0.95
-\end{align*}
-In this binomial distribution, n = 10. and we know that \begin{align*}P(X = x) = \binom{n}{x} q^{n-x} p^x \end{align*}, where x can be any number from 0 to n.
+\end{align}
+In this binomial distribution, n = 10. and we know that \begin{align} \pr{X = x} = \binom{n}{x} q^{n-x} p^x \end{align}, where x can be any number from 0 to n.
 
 \textbf{Code}
 \lstinputlisting[language=Python]{codes/distro.py}
@@ -314,6 +314,7 @@ P(10) = 9.765625000000005e-14
 P(0) = Probability of X <= 1 is P(0) + P(1) = 0.9138616441006833
 \end{lstlisting}
 
+Hence, \begin{align} \pr{X \leq 1} = 0.913 \end{align}
 \end{document}
 
 
