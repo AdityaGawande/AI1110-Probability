@@ -285,11 +285,14 @@ AI1110 - Assignment1
 There are 5\% defective items in a large bulk of items. What is the probability that a sample of 10 items will include not more than one defective item?
 
 \textbf{Solution:}
-Let there be $x$ number of defective items in a sample of of ten items drawn successively.
+Let there be x number of defective items in a sample of of ten items drawn successively.
 Now, as we can see that the drawing of the items is done with replacement. Thus, the trials are Bernoulli trials.
-Probability of failure = $0.05 = p$
-$q = 1-p = 0.95$
-In this binomial distribution, $n = 10$. and we know that $P(X = x) = \binom{n}{x} q^{n-x} p^x$, where x can be any number from 0 to n.
+Probability of failure = p 
+\begin{align*}
+p &= 0.05 \\
+q &= 1-p = 0.95
+\end{align*}
+In this binomial distribution, n = 10. and we know that \begin{align*}P(X = x) = \binom{n}{x} q^{n-x} p^x \end{align*}, where x can be any number from 0 to n.
 
 \textbf{Code}
 \lstinputlisting[language=Python]{codes/distro.py}
