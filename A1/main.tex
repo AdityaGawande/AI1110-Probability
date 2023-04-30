@@ -285,34 +285,17 @@ AI1110 - Assignment1
 There are 5\% defective items in a large bulk of items. What is the probability that a sample of 10 items will include not more than one defective item?
 
 \textbf{Solution:}
-Let there be x number of defective items in a sample of of ten items drawn successively.
+Let there be $x$ number of defective items in a sample of of ten items drawn successively.
 Now, as we can see that the drawing of the items is done with replacement. Thus, the trials are Bernoulli trials.
-Probability of failure = p 
+Probability of failure = $p$ 
 \begin{align}
 p &= 0.05 \\
 q &= 1-p = 0.95
 \end{align}
-In this binomial distribution, n = 10. and we know that \begin{align} \pr{X = x} = \binom{n}{x} q^{n-x} p^x \end{align}, where x can be any number from 0 to n.
+In this binomial distribution, $n = 10$. and we know that \begin{align} \pr{X = x} = \binom{n}{x} q^{n-x} p^x \end{align}, where $x$ can be any number from $0$ to $n$.
 
 \textbf{Code}
 \lstinputlisting[language=Python]{codes/distro.py}
-
-\textbf{Output}
-\begin{lstlisting}
-P(0) = 0.5987369392383787
-P(1) = 0.31512470486230454
-P(2) = 0.07463479852001952
-P(3) = 0.010475059441406248
-P(4) = 0.0009648081064453125
-P(5) = 6.0935248828124994e-05
-P(6) = 2.6725986328125004e-06
-P(7) = 8.037890625000003e-08
-P(8) = 1.5864257812500007e-09
-P(9) = 1.8554687500000008e-11
-P(10) = 9.765625000000005e-14
-
-P(0) = Probability of X <= 1 is P(0) + P(1) = 0.9138616441006833
-\end{lstlisting}
 
 Hence, \begin{align} \pr{X \leq 1} = 0.913 \end{align}
 \end{document}
