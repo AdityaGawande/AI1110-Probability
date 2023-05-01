@@ -293,11 +293,21 @@ p &= 0.05 \\
 q &= 1-p = 0.95
 \end{align}
 In this binomial distribution, $n = 10$. and we know that \begin{align} \pr{X = x} = \binom{n}{x} q^{n-x} p^x \end{align}, where $x$ can be any number from $0$ to $n$.
+The CDF of $X$ is given by
+\begin{align}
+	F_{X}\brak{n} &= \pr{X \le n}\\ &= 
+\begin{cases}
+0 & n < 0 \\
+\sum_{k=0}^{n} \binom{10}{k} q^{10-k} p^k & 0 \le n \leq 10 \\ 
+1 & \text{otherwise}
+\end{cases}
+\end{align}
+
 
 \textbf{Code}
 \lstinputlisting[language=Python]{codes/distro.py}
 
-Hence, \begin{align} \pr{X \leq 1} = 0.913 \end{align}
+Hence, \begin{align} F_{X}\brak{1} = 0.913 \end{align}
 \end{document}
 
 
